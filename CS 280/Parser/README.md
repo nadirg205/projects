@@ -2,14 +2,11 @@
 A top down recursive-descent parser made for a language, known as the Mini C-Like (MCL) Language, which employs the following grammar rules.
 
 Prog ::= PROGRAM IDENT CompStmt
-
 StmtList ::= Stmt { Stmt }
-
 Stmt ::= DeclStmt | ControlStmt | CompStmt
-
-DeclStmt ::= ( INT | FLOAT | BOOL | CHAR | STRING ) VarList ;
+DeclStmt ::= ( INT | FLOAT | BOOL | CHAR | STRING ) VarList 
 VarList ::= Var [= Expr] { ,Var [= Expr]}
-ControlStmt ::= AssgnStmt ; | IfStmt | PrintStmt ;
+ControlStmt ::= AssgnStmt ; | IfStmt | PrintStmt 
 PrintStmt ::= PRINT (ExprList)
 CompStmt ::= ‘{‘ StmtList ‘}’
 IfStmt ::= IF (Expr) Stmt [ ELSE Stmt ]
