@@ -40,3 +40,8 @@ MultExpr ::= UnaryExpr { ( * | / | % ) UnaryExpr }
 UnaryExpr ::= [( - | + | ! )] PrimaryExpr
 
 PrimaryExpr ::= IDENT | ICONST | RCONST | SCONST | BCONST | CCONST | ( Expr )
+
+testprogxx are test input files.
+prog3.cpp is the runner
+lex.cpp is the lexical analyzer
+parserInterp is the parser/interpreter
